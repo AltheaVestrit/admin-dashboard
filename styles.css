@@ -1,0 +1,43 @@
+:root {
+    --blue: #1992d4;
+    --grey: #e2e8f0;
+    --orange: #f0b429;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    min-height: 98vh;
+    width: 90%;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 3.7fr;
+    grid-template-rows: 1fr 4.8fr;
+}
+
+header {
+    background-color: white;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+aside {
+    background-color: var(--blue);
+    color: white;
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+main {
+    background-color: var(--grey);
+
+    grid-column: 2;
+    grid-row: 2;
+}
