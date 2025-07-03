@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -30,9 +31,31 @@ header {
 aside {
     background-color: var(--blue);
     color: white;
+    padding: 20px;
 
     grid-column: 1;
     grid-row: 1 / span 2;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+#logo {
+    aspect-ratio: 1;
+    width: 40px;
+}
+
+.nav-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.nav-img {
+    aspect-ratio: 1;
+    width: 20px;
+    align-self: center;
+    justify-self: right;
+    padding-right: 10px;
 }
 
 main {
